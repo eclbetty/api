@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.header-top .logo,.header-top .site-title{display:inline-block;vertical-align:top;margin-right:-4px}
+.btn-hamburger,.logo-white,.main-nav-wrap .main-nav li,.site-title{display:inline-block;vertical-align:middle;margin-right:-4px}
+.main-nav-wrap ul,.min-nav ul{margin:0;padding:0;list-style-type:none}
+.main-nav-wrap li.cur-nav,.main-nav-wrap li:hover,.min-nav li.cur-nav,.min-nav li:hover{background-color:#6137b0;transition:ease-in-out all .4s}
+.main-nav-wrap li a,.min-nav li a{display:block;margin-top:2px;padding:0 20px;height:42px;color:#FFF;font-size:14px;font-weight:500;line-height:42px;text-align:center;cursor:pointer;text-decoration:none}
+.main-nav-wrap li a.home,.min-nav li a.home{padding:0;min-width:42px;color:#FFF;font-size:20px}
+.main-nav-wrap li a.home:hover,.min-nav li a.home:hover{color:#FFF}
+.article-list{padding:0;font-size:13px}
+.article-list .article-content{display:none;padding:12px 38px;background-color:#FFF;line-height:20px;text-indent:0}
+.article-list ol,.article-list ul{padding-left:20px;list-style-position:outside}
+.article-list .article{margin:0 0 14px;border:1px solid #DDD;color:#444;list-style-type:none;list-style-position:inside;background:#EEE;text-indent:-12px;cursor:pointer}
+.article-list .article .article-title{padding:12px 0 12px 33px;font-weight:500}
+.article-list .article:hover{background-color:#dee4ff;transition:ease-in-out all .4s}
+.article-list .article.expend h4{background:#EEE;transition:ease-in-out all .4s}
+.article-list .article.expend h4:hover{color:#1C98CC;transition:ease-in-out all .2s}
+.red-text,.star{color:red}
+.hamburger-icon{position:relative;width:30px;height:30px;transform:rotate(0);transition:.5s ease-in-out;cursor:pointer}
+.hamburger-icon span{display:block;position:absolute;height:5px;width:100%;background:#FFF;border-radius:9px;opacity:1;left:0;transform:rotate(0);transition:.25s ease-in-out}
+.hamburger-icon span:nth-child(1){top:0}
+.hamburger-icon span:nth-child(2),.hamburger-icon span:nth-child(3){top:10px}
+.hamburger-icon span:nth-child(4){top:20px}
+.hamburger-icon.open span:nth-child(1),.hamburger-icon.open span:nth-child(4){top:10px;width:0;left:50%}
+.hamburger-icon.open span:nth-child(2){transform:rotate(45deg)}
+.hamburger-icon.open span:nth-child(3){transform:rotate(-45deg)}
+.main-nav-wrap,footer{width:100%;min-width:320px}
+*,:after,:before{box-sizing:border-box}
+.star{padding:0 3px}
+.main-blue-text{color:#6f42c1}
+html{height:100%}
+body{position:relative;padding:50px 0 120px;min-height:100%;color:#555;font-size:12px;font-family:Roboto,STHeiti,'Microsoft YaHei','微软雅黑',SimSun,'宋体','Microsoft JhengHei','微軟正黑體',arial,helvetica,sans-serif}
+@media (min-width:400px){body{padding-bottom:105px}
+}
+@media (min-width:740px){body{padding-bottom:90px}
+}
+.wrapper{min-width:320px;min-height:580px;letter-spacing:.04em}
+.header-top{max-width:1020px;margin-left:auto;margin-right:auto;display:none}
+.header-top:after{content:" ";display:block;clear:both}
+@media (min-width:1030px){body{padding-top:0}
+.header-top{max-width:1020px;margin-left:auto;margin-right:auto;display:block;height:74px}
+.header-top:after{content:" ";display:block;clear:both}
+.time-wrap{display:block}
+}
+.header-top .logo{margin:16px 0 0 5px;background:url(../images/logo.png) 0 0/100% no-repeat;text-indent:105%;white-space:nowrap;overflow:hidden}
+.header-top .site-title{margin-top:30px;color:#999;font-size:24px;line-height:24px;font-weight:700}
+.time-wrap .time-text{display:inline-block;vertical-align:middle;line-height:17px}
+.main-nav-wrap{position:fixed;top:0;z-index:5;background-color:#6f42c1}
+.main-nav-wrap .main-nav{max-width:1020px;margin-left:auto;margin-right:auto;display:none;color:#FFF;font-size:15px}
+.content:after,.main-nav-wrap .main-nav:after{content:" ";display:block;clear:both}
+@media (min-width:1030px){.main-nav-wrap{position:static}
+.main-nav-wrap .main-nav{max-width:1020px;margin-left:auto;margin-right:auto;display:block}
+.main-nav-wrap .main-nav:after{content:" ";display:block;clear:both}
+.main-nav-wrap .main-nav li{border-right:1px solid #7b4bd1}
+}
+.main-nav-wrap .main-nav ul{margin:0;padding:0}
+.main-nav-wrap .main-nav li{height:46px;list-style-type:none}
+.main-nav-wrap .main-nav li.nav-btns-r{float:right;border-left:1px solid #7b4bd1}
+.content{max-width:1020px;margin:0 auto;padding:0 10px 50px;min-height:400px}
+@media (min-width:1030px){.content{padding-top:0}
+.logo-white{display:none}
+}
+.content h1,.content h2{margin-left:5px;color:#6f42c1;font-weight:400}
+footer{position:absolute;right:0;bottom:0;left:0;padding:25px 0 1px;height:120px;background-color:#000;color:#666;line-height:20px;text-align:center}
+@media (min-width:400px){footer{height:105px}
+}
+@media (min-width:740px){footer{height:90px}
+}
+footer p{margin:0;letter-spacing:.08em}
+footer a{color:#AAA}
+.logo-white{margin-left:10px;background:url(../images/logo_white.png) 0 0/100% no-repeat}
+.site-title{display:inline-block;color:#FFF;font-size:16px;margin-top:6px;text-indent:10px}
+.btn-hamburger{padding:12px 0 0 9px;width:50px;height:50px;background:#7b4bd1;cursor:pointer}
+@media (min-width:1030px){.btn-hamburger,.site-title{display:none}
+}
+.min-nav{display:block;position:fixed;top:50px;z-index:1;width:100%;min-width:320px;background-color:#7b4bd1}
+@media (min-width:1030px){.min-nav{display:none}
+.min-nav ul li a.home{width:40px}
+}
+.header-top .logo{width:108px;height:48px}
+.logo-white{width:54px;height:20px}
